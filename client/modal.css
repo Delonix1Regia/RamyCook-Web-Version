@@ -1,0 +1,141 @@
+/* Modal Background */
+#recipe-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding-top: 60px;
+    overflow-y: auto;
+  }
+  
+  /* Modal Content Box */
+  .modal-content {
+    background-color: #1e1e1e; /* Dark background for modal content */
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 900px; /* Adjust maximum width */
+    color: #fff; /* White text */
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  /* Close Button */
+  #close-modal-btn {
+    color: #ccc;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  #close-modal-btn:hover,
+  #close-modal-btn:focus {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Recipe Image */
+  #recipe-image {
+    width: 100%;          /* Membuat gambar mengikuti lebar modal */
+    max-height: 300px;    /* Membatasi tinggi gambar maksimal 200px */
+    height: auto;         /* Menjaga aspek rasio gambar */
+    object-fit: cover;  /* Memastikan gambar tetap terlihat utuh dalam area yang dibatasi */
+    border-radius: 10px;  /* Memberikan radius pada sudut gambar */
+    margin-bottom: 20px;  /* Memberikan ruang di bawah gambar */
+  }
+  
+  /* Recipe Name */
+  #recipe-name {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  /* Recipe Category */
+  #recipe-category {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  /* Section Headers */
+  h3 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* Recipe Description */
+  #recipe-description {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Ingredients (unordered list) */
+  ul {
+    list-style-type: circle; /* Circle bullets for ingredients */
+    padding-left: 40px; /* Space for bullets */
+    text-align: left;
+    color: #ddd;
+  }
+  
+  li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Steps (ordered list) */
+  ol {
+    padding-left: 40px; /* Space for numbered list */
+    text-align: left;
+    color: #ddd;
+  }
+  
+  li.step {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    #recipe-name {
+      font-size: 2rem;
+    }
+  
+    #recipe-description {
+      font-size: 1rem;
+    }
+  
+    h3 {
+      font-size: 1.4rem;
+    }
+  
+    ul, ol {
+      padding-left: 20px;
+    }
+  
+    li {
+      font-size: 1rem;
+    }
+  }
+  
